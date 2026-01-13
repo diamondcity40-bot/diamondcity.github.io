@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>DIAMOND CITY RP S3</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Cairo:wght@600&display=swap" rel="stylesheet">
+
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:'Cairo',sans-serif;
+background:#020b2c;
+color:white;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+background:url("img3.webp") center/cover no-repeat;
+position:relative;
+}
+.hero::after{
+content:"";
+position:absolute;
+top:0;left:0;
+width:100%;height:100%;
+background:rgba(0,0,0,.7);
+}
+.hero-content{
+position:relative;
+z-index:2;
+text-align:center;
+top:50%;
+transform:translateY(-50%);
+}
+.hero h1{
+font-family:'Orbitron',sans-serif;
+font-size:42px;
+color:#00ccff;
+text-shadow:0 0 25px #00ccff;
+}
+.hero p{
+font-size:18px;
+margin:15px 0;
+}
+.btn{
+background:#00ccff;
+color:black;
+padding:15px 45px;
+border-radius:40px;
+font-size:18px;
+text-decoration:none;
+box-shadow:0 0 25px #00ccff;
+display:inline-block;
+margin:10px;
+}
+
+/* SECTION */
+section{
+padding:60px 20px;
+text-align:center;
+}
+section h2{
+color:#00ccff;
+margin-bottom:25px;
+}
+
+/* SLIDER */
+.slider{
+max-width:900px;
+margin:auto;
+}
+.slide{display:none}
+.slide img{
+width:100%;
+border-radius:20px;
+box-shadow:0 0 30px #00ccff;
+}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+.gallery img{
+width:100%;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,204,255,.6);
+transition:.4s;
+}
+.gallery img:hover{transform:scale(1.05)}
+
+/* RULES */
+.rules{
+max-width:900px;
+margin:auto;
+text-align:right;
+background:rgba(0,0,0,.6);
+padding:25px;
+border-radius:20px;
+box-shadow:0 0 20px #00ccff;
+}
+.rules h3{
+color:#00ccff;
+margin-top:25px;
+}
+.rules li{
+margin:6px 0;
+}
+
+/* FOOTER */
+footer{
+background:black;
+text-align:center;
+padding:20px;
+color:#00ccff;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <h1>💎 DIAMOND CITY RP S3 💎</h1>
+    <p>أفضل سيرفر رول بلاي SA-MP | تجربة عالمية واقعية</p>
+    <a class="btn" href="https://discord.gg/gqn3nxEj" target="_blank">🚀 دخول الديسكورد</a>
+    <a class="btn" href="https://discord.gg/gqn3nxEj" target="_blank">📜 القوانين والأوامر</a>
+  </div>
+</div>
+
+<!-- SLIDER -->
+<section>
+<h2>🌍 لقطات من المدينة</h2>
+<div class="slider">
+  <div class="slide"><img src="img1.webp"></div>
+  <div class="slide"><img src="img2.webp"></div>
+  <div class="slide"><img src="img3.webp"></div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section>
+<h2>🔥 عالم Diamond City</h2>
+<div class="gallery">
+  <img src="img1.webp">
+  <img src="img2.webp">
+  <img src="img3.webp">
+</div>
+</section>
+
+<!-- RULES -->
+<section>
+<h2>📜 القوانين و الأوامر</h2>
+<div class="rules">
+
+<h3>💬 قوانين ديسكورد</h3>
+<ul>
+<li>ممنوع السب أو الشتم</li>
+<li>ممنوع مضايقة الآخرين</li>
+<li>ممنوع التحدث عن أمور دينية</li>
+<li>ممنوع التحدث خارج RP</li>
+<li>ممنوع طلب الرتب أو الترويج</li>
+</ul>
+
+<h3>💀 قوانين العصابات</h3>
+<ul>
+<li>قوانين المدينة تنطبق على العصابات</li>
+<li>إعلان قبل أي سرقة</li>
+<li>يمنع توزيع أسلحة العصابة</li>
+<li>عدم التفاعل 3 أيام = تحذير</li>
+</ul>
+
+<h3>👮 قوانين الدولة</h3>
+<ul>
+<li>ممنوع الرشوة</li>
+<li>ممنوع استخدام أسلحة العمل شخصيًا</li>
+<li>التقارير الإذاعية إلزامية</li>
+</ul>
+
+<h3>🛡️ Save Zone</h3>
+<ul>
+<li>ممنوع القتل أو السرقة</li>
+<li>ممنوع التهديد أو المطاردة</li>
+<li>ممنوع الاستفزاز</li>
+</ul>
+
+<p style="text-align:center;color:#00ccff;">|| @everyone @here ||</p>
+
+</div>
+</section>
+
+<footer>
+<a class="btn" href="https://discord.gg/gqn3nxEj" target="_blank">💬 Discord الرسمي</a>
+<p>© DIAMOND CITY ROLEPLAY 2025 - 2026</p>
+</footer>
+
+<script>
+let i=0;
+const slides=document.querySelectorAll(".slide");
+function show(){
+slides.forEach(s=>s.style.display="none");
+i++; if(i>slides.length){i=1}
+slides[i-1].style.display="block";
+}
+show(); setInterval(show,3000);
+</script>
+
+</body>
+</html>
